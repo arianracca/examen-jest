@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://Yog9.github.io/SnapShot",
+  "type": "module",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -19,7 +20,7 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --collectCoverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -38,8 +39,6 @@
     ]
   },
   "devDependencies": {
-    "@types/jest": "^29.5.3",
-    "@types/react-router-dom": "^5.3.3",
-    "jest": "^24.9.0"
+    "@types/jest": "^29.5.3"
   }
 }
