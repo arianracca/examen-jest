@@ -1,24 +1,24 @@
-# Examen JEST 
+# Exam JEST
 
-### Summary
+## Description
 
- El proyecto consiste en una aplicación que realiza la búsqueda de diferentes imágenes (Montañas, playas, aves y comida) mediante un cuadro de texto. Al escribir se activa el botón de búsqueda y luego mediante el consumo de una api realiza la llamada correspondiente.
+This project is focused on performing unit and integration tests to measure the coverage of a React application. The application allows users to search for different images (mountains, beaches, birds, and food) using a text input. Upon typing, the search button is activated, and the application makes the corresponding API call to fetch the images.
 
-### Tareas
+## Tasks
 
-El objetivo es realizar el test de cada componente para cumplir con una cobertura general >  80
+The objective is to write tests for each component to achieve an overall coverage of > 80.
 
-- Todos los test deben estar dentro de una describe()
-- Hacer uso de uno de los hooks en el componente Form
-- Realizar Render de los componentes para poder utilizar las propiedades de los mismos
-- Implementar en los expect() realizados algunos de los matcher más comunes
-- Realizar mock del servicio utilizado en el componente PhotoContext
-- Trabajar con Exceptions en el componente PhotoContext
-- Agregar por lo menos un test con el match toMatchSnapshot()
+- All tests should be within a `describe()` block.
+- Utilize one of the hooks in the `Form` component.
+- Render the components to access and test their properties.
+- Implement some of the common matchers in the `expect()` statements.
+- Mock the service used in the `PhotoContext` component.
+- Handle exceptions in the `PhotoContext` component.
+- Include at least one test using the `toMatchSnapshot()` matcher.
 
-### Fecha límite de entrega 
+## Installation
 
-17/07/2023
+Use the package manager [npm](https://www.npmjs.com/) to install the project dependencies.
 
 ##### Install dependencies
 
@@ -28,6 +28,12 @@ El objetivo es realizar el test de cada componente para cumplir con una cobertur
 
 `npm start`
 
+##### Run Tests.
 
-### Mucha suerte a cada uno!!
+`npm test`
 
+##### Run Tests without coverage.
+
+Delete "--collectCoverage" on package.json from this line:
+
+  `"test": "react-scripts test --collectCoverage",`
