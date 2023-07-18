@@ -9,8 +9,8 @@ jest.mock('../../components/Container', () => ({
 }));
 
 describe('Item', () => {
-  it('should render the Item component with the correct searchTerm', () => {
-    const searchTerm = 'mountain';
+  test('should render the Item component with the correct searchTerm', () => {
+    const searchTerm = 'mocking';
     const { getByText } = render(<Item searchTerm={searchTerm} />);
     
     const titleElement = getByText(`${searchTerm} Pictures`);

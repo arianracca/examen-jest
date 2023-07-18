@@ -9,8 +9,8 @@ jest.mock('../../components/Container', () => ({
 }));
 
 describe('Search', () => {
-  it('should render the Search component with the correct searchTerm', () => {
-    const searchTermMock = 'tiger';
+  test('should render the Search component with the correct searchTerm', () => {
+    const searchTermMock = 'mock';
     render(<Search searchTerm={searchTermMock} />);
     
     expect(Container).toHaveBeenCalledTimes(1);

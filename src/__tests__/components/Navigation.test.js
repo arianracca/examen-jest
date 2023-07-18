@@ -11,14 +11,14 @@ describe('Navigation component', () => {
       </MemoryRouter>
     );
 
-    const mountainLink = screen.getByRole('link', { name: /mountain/i });
-    const beachLink = screen.getByRole('link', { name: /beaches/i });
-    const birdLink = screen.getByRole('link', { name: /birds/i });
-    const foodLink = screen.getByRole('link', { name: /food/i });
+    const beach = screen.getByRole('link', { name: /beaches/i });
+    const bird = screen.getByRole('link', { name: /birds/i });
+    const mountain = screen.getByRole('link', { name: /mountain/i });
+    const food = screen.getByRole('link', { name: /food/i });
 
-    expect(mountainLink).toBeInTheDocument();
-    expect(beachLink).toBeInTheDocument();
-    expect(birdLink).toBeInTheDocument();
-    expect(foodLink).toBeInTheDocument();
+    expect(beach).toBeInTheDocument();
+    expect(bird).toBeInTheDocument();
+    expect(mountain).toBeInTheDocument();
+    expect(food).toBeInTheDocument();
   });
 });

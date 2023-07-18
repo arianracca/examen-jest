@@ -3,12 +3,10 @@ import { render, screen } from '@testing-library/react';
 import { PhotoContext } from '../../context/PhotoContext';
 import Container from '../../components/Container';
 
-// Mock del componente Gallery
 jest.mock('../../components/Gallery', () => {
   return jest.fn(() => <div>Mocked Gallery</div>);
 });
 
-// Mock del componente Loader
 jest.mock('../../components/Loader', () => {
   return jest.fn(() => <div>Mocked Loader</div>);
 });
@@ -32,14 +30,14 @@ describe('Container', () => {
   test('should render Gallery when loading is false', () => {
     const mockRunSearch = jest.fn();
     const mockImages = [
-      { title: 'Cat 1', url: 'https://example.com/cat1.jpg' },
-      { title: 'Cat 2', url: 'https://example.com/cat2.jpg' },
+      { title: 'Mock 1', url: 'https://mocking.com/mock1.jpg' },
+      { title: 'Mock 2', url: 'https://mocking.com/mock2.jpg' },
     ];
     const mockLoading = false;
 
     render(
       <PhotoContext.Provider value={{ images: mockImages, loading: mockLoading, runSearch: mockRunSearch }}>
-        <Container searchTerm="cats" />
+        <Container searchTerm="mocks" />
       </PhotoContext.Provider>
     );
 
